@@ -25,19 +25,36 @@
 <body>
     <!-- Inicio de header -->
     <header>
-        <img class="logo" src="../assets/img/logo1.png" alt="logo" width="100" height="100">
+        <img class="logo" src="./assets/img/logo1.png" alt="logo" width="100" height="100">
 
-        <a href="#">
-            <span class="jam jam-menu header__icono"></span>
+        <a href="#menu" class="header__icono">
+            <span class="jam jam-menu"></span>
         </a>
-
-        <nav class="nav nav-pills flex-column flex-sm-row">
-            <a class="flex-sm-fill text-sm-center nav-link" href="../index.html">Inicio</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="../pages/inspiracion.html">Inspiración</a>
-            <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="../pages/tienda.html">Tienda</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="../pages/patrones.html">Patrones</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="../pages/contacto.html">Contacto</a>
+        <nav class="nav-pills flex-column flex-sm-row nav" id="menu">
+            <ul class="nav__lista">
+                <li class="nav__item">
+                    <a class="flex-sm-fill text-sm-center nav-link" aria-current="page"
+                    href="../index.html">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a class="flex-sm-fill text-sm-center nav-link" href="./inspiracion.html">Inspiración</a>
+                    
+                </li>
+                <li class="nav__item">
+                    <a class="flex-sm-fill text-sm-center nav-link active" href="./tienda.html">Tienda</a>
+                </li>
+                <li class="nav__item">
+                    <a class="flex-sm-fill text-sm-center nav-link" href="./patrones.html">Patrones</a>
+                </li>
+                <li class="nav__item">
+                    <a class="flex-sm-fill text-sm-center nav-link" href="./contacto.html">Contacto</a>
+                </li>
+                <li class="nav__item nav__item--oculto">
+                    <a class="flex-sm-fill text-sm-center nav-link" href="#cerrado">❌</a>
+                </li>
+            </ul>
         </nav>
+
     </header>
     <!-- cierre de header -->
 

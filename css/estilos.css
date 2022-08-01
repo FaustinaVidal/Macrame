@@ -55,13 +55,11 @@ header {
 }
 
 a {
-    color: black;
+    color: black !important;
 }
 
 .nav__lista {
     color: black;
-    font-size: 32px;
-
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -70,15 +68,18 @@ a {
 
 .nav__item {
     color: black;
-    margin-left: 16px;
-    font-size: 26px;
-
     transition: font-size 1s;
+    margin-left: 16px;
 }
+
+
 
 .nav__item:hover {
-    font-size: 20px;
+    box-shadow: 3px 3px 5px gray;
+    border-radius: 15px;
+    background-color: violet;
 }
+
 
 
 .header__menu {
@@ -91,8 +92,12 @@ a {
     color: black;
     font-size: 30px;
     display: none;
+    text-decoration: none;
 }
 
+.nav__item--oculto {
+    display: none;
+}
 
 
 /*--------------------------------------*/
@@ -134,6 +139,7 @@ main {
 
 .footer__icono {
     transition: font-size 1s;
+    text-decoration: none;
 }
 
 .footer__icono:hover {
@@ -186,17 +192,24 @@ main {
 .sugerencias {
     background-color: violet;
     color: black;
-    padding: 10px;
+    padding: 1rem;
     border-radius: 10px;
     margin: 10px;
     text-align: center;
     position: fixed;
     right: 1rem;
-    bottom: 13rem;
+    bottom: 14rem;
+    display: flex;
+}
+.sugerencias__boton {
+    margin-top: 1rem;
 }
 
-.btn {
-    margin-top: 1rem;
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /*--------------Inspiracion----------------*/
@@ -452,13 +465,35 @@ main {
 /* --------------header--------------*/
 /*Movil*/
 @media screen and (max-width:599px) {
-
-    .nav__lista {
+    .nav {
         display: none;
+        background-color: rgb(255, 255, 255);
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10000;
+        width: 30%;
+        height: 100vh;
+    }
+    
+    .nav__lista {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+        padding-top: 1rem;
+        height: 100%;
+        gap: 1rem;
     }
 
     .header__icono {
         display: block;
     }
 
+    .nav__item--oculto {
+        display: block;
+    }
+
+    .nav:target {
+        display: block ;
+    }
 }

@@ -27,15 +27,32 @@
     <header>
         <img class="logo" src="./assets/img/logo1.png" alt="logo" width="100" height="100">
 
-        <a href="#">
-            <span class="jam jam-menu header__icono"></span>
+        <a href="#menu" class="header__icono">
+            <span class="jam jam-menu"></span>
         </a>
-        <nav class="nav nav-pills flex-column flex-sm-row">
-            <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="./index.html">Inicio</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="./pages/inspiracion.html">Inspiración</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="./pages/tienda.html">Tienda</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="./pages/patrones.html">Patrones</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="./pages/contacto.html">Contacto</a>
+        <nav class="nav-pills flex-column flex-sm-row nav" id="menu">
+            <ul class="nav__lista">
+                <li class="nav__item">
+                    <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page"
+                    href="./index.html">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a class="flex-sm-fill text-sm-center nav-link" href="./pages/inspiracion.html">Inspiración</a>
+                    
+                </li>
+                <li class="nav__item">
+                    <a class="flex-sm-fill text-sm-center nav-link" href="./pages/tienda.html">Tienda</a>
+                </li>
+                <li class="nav__item">
+                    <a class="flex-sm-fill text-sm-center nav-link" href="./pages/patrones.html">Patrones</a>
+                </li>
+                <li class="nav__item">
+                    <a class="flex-sm-fill text-sm-center nav-link" href="./pages/contacto.html">Contacto</a>
+                </li>
+                <li class="nav__item nav__item--oculto">
+                    <!--<a class="flex-sm-fill text-sm-center nav-link" href="#cerrado">❌</a>-->
+                </li>
+            </ul>
         </nav>
 
     </header>
@@ -78,11 +95,13 @@
                 <div class="col-12 col-md-2">
                     <!-- Opcion de sugerencias -->
                     <section class="texto sugerencias">
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Sugerencias:</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            <button type="button" class="btn btn-light">Enviar</button>
-                        </div>
+                        <form action="">
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Sugerencias:</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <button type="submit" class="btn btn-light sugerencias__boton">Enviar</button>
+                            </div>
+                        </form>
                     </section>
                     <!-- Fin de opcion de sugerencias -->
                 </div>
