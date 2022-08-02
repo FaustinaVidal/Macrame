@@ -33,12 +33,11 @@
         <nav class="nav-pills flex-column flex-sm-row nav" id="menu">
             <ul class="nav__lista">
                 <li class="nav__item">
-                    <a class="flex-sm-fill text-sm-center nav-link" aria-current="page"
-                    href="../index.html">Inicio</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" aria-current="page" href="../index.html">Inicio</a>
                 </li>
                 <li class="nav__item">
                     <a class="flex-sm-fill text-sm-center nav-link" href="./inspiracion.html">Inspiración</a>
-                    
+
                 </li>
                 <li class="nav__item">
                     <a class="flex-sm-fill text-sm-center nav-link active" href="./tienda.html">Tienda</a>
@@ -60,46 +59,176 @@
 
     <!-- Inicio de contenido-->
     <main>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-3">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/caravanas1.jpg" class="card-img-top" alt="imagen de caravanas">
-                        <div class="card-body">
-                            <h5 class="card-title">Caravanas de Hojas</h5>
-                            <p class="card-text">$350</p>
-                            <a href="#" class="btn btn-primary">Comprar</a>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Caravanas
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-4 card__espacio">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="../assets/img/caravanas1.jpg" class="card-img-top"
+                                            alt="imagen de caravanas">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Caravanas de Hojas</h5>
+                                            <p class="card-text">$350</p>
+                                            <a href="#" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 card__espacio">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="../assets/img/caravanas2.jpg" class="card-img-top"
+                                            alt="imagen de caravanas">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Caravanas de Cartucho</h5>
+                                            <p class="card-text">$350</p>
+                                            <a href="#" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 card__espacio">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="../assets/img/caravanas3.jpg" class="card-img-top"
+                                            alt="imagen de caravanas">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Caravanas de girasol</h5>
+                                            <p class="card-text">$300</p>
+                                            <a href="#" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-3 aver">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/caravanas2.jpg" class="card-img-top" alt="imagen de caravanas">
-                        <div class="card-body">
-                            <h5 class="card-title">Caravanas de Cartucho</h5>
-                            <p class="card-text">$350</p>
-                            <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Pulseras y tobilleras
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-4 card__espacio">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="../assets/img/pulsera1.jpg" class="card-img-top"
+                                            alt="imagen de pulsera">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Pulsera modelo 1</h5>
+                                            <p class="card-text">$300</p>
+                                            <form action="">
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Talle</option>
+                                                    <option value="1">S</option>
+                                                    <option value="2">M</option>
+                                                    <option value="3">L</option>
+                                                </select>
+                                            </form>
+                                            <a href="#" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 card__espacio">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="../assets/img/pulsera2.jpg" class="card-img-top"
+                                            alt="imagen de pulsera">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Pulsera modelo 2</h5>
+                                            <p class="card-text">$350</p>
+                                            <form action="">
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Talle</option>
+                                                    <option value="1">S</option>
+                                                    <option value="2">M</option>
+                                                    <option value="3">L</option>
+                                                </select>
+                                            </form>
+                                            <a href="#" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 card__espacio">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="../assets/img/pulsera3.jpg" class="card-img-top"
+                                            alt="imagen de pulsera">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Pulsera Diversidad</h5>
+                                            <p class="card-text">$250</p>
+                                            <form action="">
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Talle</option>
+                                                    <option value="1">S</option>
+                                                    <option value="2">M</option>
+                                                    <option value="3">L</option>
+                                                </select>
+                                            </form>
+                                            <a href="#" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-3">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/caravanas3.jpg" class="card-img-top" alt="imagen de caravanas">
-                        <div class="card-body">
-                            <h5 class="card-title">Caravanas de girasol</h5>
-                            <p class="card-text">$300</p>
-                            <a href="#" class="btn btn-primary">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-3">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/caravanas4.jpg" class="card-img-top" alt="imagen de caravanas">
-                        <div class="card-body">
-                            <h5 class="card-title">Pulsera Diversidad</h5>
-                            <p class="card-text">$250</p>
-                            <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Collares
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-4 card__espacio">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="../assets/img/collar1.jpg" class="card-img-top"
+                                            alt="imagen de collares">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Collar de Serpientes</h5>
+                                            <p class="card-text">$500</p>
+                                            <a href="#" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 card__espacio">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="../assets/img/collar2.jpg" class="card-img-top"
+                                            alt="imagen de collares">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Collar de Flor</h5>
+                                            <p class="card-text">$500</p>
+                                            <a href="#" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 card__espacio">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="../assets/img/c" class="card-img-top" alt="imagen de collares">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Collar de hongos</h5>
+                                            <p class="card-text">$600</p>
+                                            <a href="#" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

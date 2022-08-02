@@ -140,6 +140,7 @@ main {
 .footer__icono {
     transition: font-size 1s;
     text-decoration: none;
+    transition: all 1s;
 }
 
 .footer__icono:hover {
@@ -154,6 +155,8 @@ main {
 }
 
 .titulo {
+    background-color: rgba(255, 255, 255, 0.568);
+    border-radius: 15px;
     color: black;
     font-size: 4rem;
     font-weight: lighter;
@@ -162,6 +165,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 .primeraSeccionIndex {
@@ -173,7 +177,7 @@ main {
 
 .primeraSeccionIndex__titulo {
     color: black;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     text-align: center;
     padding: 1rem 0;
@@ -201,11 +205,13 @@ main {
     bottom: 14rem;
     display: flex;
 }
+
 .sugerencias__boton {
     margin-top: 1rem;
 }
 
-.card-body{
+.card-body {
+    text-align: justify;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -288,19 +294,17 @@ main {
 }
 
 /*-------------Tienda--------------------*/
-.col-md-3 {
+
+.card__espacio {
     padding: 1rem;
 }
 
-.col-md-4 {
-    padding: 1rem;
-}
 
 /*    display: inline-block;
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
-    align-items: center;
+c
     margin: 2rem;*/
 
 /*-------------Patrones--------------------*/
@@ -385,16 +389,6 @@ main {
     padding: 5px 10px;
 }
 
-.contacto {
-    padding: 1rem;
-    /*
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        */
-}
-
 .mapa {
     width: 100%;
     height: 450px;
@@ -475,7 +469,7 @@ main {
         width: 30%;
         height: 100vh;
     }
-    
+
     .nav__lista {
         flex-direction: column;
         align-items: flex-start;
@@ -494,6 +488,6 @@ main {
     }
 
     .nav:target {
-        display: block ;
+        display: block;
     }
 }
