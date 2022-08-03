@@ -459,7 +459,7 @@ c
 /* --------------header--------------*/
 /*Movil*/
 @media screen and (max-width:599px) {
-    .nav {
+    .nav__menu {
         display: none;
         background-color: rgb(255, 255, 255);
         position: fixed;
@@ -487,7 +487,7 @@ c
         display: block;
     }
 
-    .nav:target {
+    .nav__menu:target {
         display: block;
     }
 }
