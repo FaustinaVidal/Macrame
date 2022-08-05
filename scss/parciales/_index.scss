@@ -1,0 +1,41 @@
+.primeraSeccionIndex {
+    width: 100%;
+    margin: 2rem auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.primeraSeccionIndex__titulo {
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.primeraSeccionIndex__parrafo {
+    color: black;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.primeraSeccionIndex__imagen {
+    width: 100%;
+}
+
+.sugerencias {
+    background-color: violet;
+    color: black;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    position: fixed;
+    right: 1rem;
+    bottom: 14rem;
+    display: flex;
+}
+
+.sugerencias__boton {
+    margin-top: 1rem;
+}

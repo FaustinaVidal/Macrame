@@ -1,0 +1,21 @@
+/* Quito los estilos por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Caveat', cursive;
+    background-image: url(../assets/img/fondo2.jpg);
+    color: black;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+/*Main*/
+main {
+    margin-top: 100px;
+    min-height: 100vh;
+}

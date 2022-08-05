@@ -1,0 +1,83 @@
+/*Header*/
+header {
+    background-image: linear-gradient(to right, #32074f, #623b77, #936ea1, #c5a6cd, #f7e0fb);
+    color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    padding: 10px 16px 10px 16px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+
+    animation-name: girasol;
+    animation-duration: 3s;
+}
+
+@keyframes girasol {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+a {
+    color: black !important;
+}
+
+.nav__lista {
+    color: black;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-right: 1rem;
+}
+
+.nav__item {
+    color: black;
+    transition: font-size 1s;
+    margin-left: 16px;
+}
+
+
+
+.nav__item:hover {
+    box-shadow: 3px 3px 5px gray;
+    border-radius: 15px;
+    background-color: violet;
+}
+
+
+
+.header__menu {
+    color: black;
+    font-size: 60px;
+    display: none;
+}
+
+.header__icono {
+    color: black;
+    font-size: 30px;
+    display: none;
+    text-decoration: none;
+}
+
+.nav__item--oculto {
+    display: none;
+}

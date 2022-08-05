@@ -1,0 +1,81 @@
+/*-------------Patrones--------------------*/
+.seccion__patrones {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.grid {
+    border: 3px solid rgb(82, 0, 82);
+    border-radius: 5px;
+    padding: 1rem;
+    height: auto;
+
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "img1 img1 img1"
+        "img2 img3 img5"
+        "img4 img4 img6";
+    gap: 1rem;
+
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: center;
+    align-content: stretch;
+}
+
+.grid__hijo {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.grid__hijo--1 {
+    grid-area: img1;
+    background-color: salmon;
+}
+
+.grid__hijo--2 {
+    grid-area: img2;
+    background-color: green;
+}
+
+.grid__hijo--3 {
+    grid-area: img3;
+    background-color: blue;
+}
+
+.grid__hijo--4 {
+    grid-area: img4;
+    background-color: rgb(255, 102, 0);
+}
+
+.grid__hijo--5 {
+    grid-area: img5;
+    background-color: rgb(255, 102, 0);
+}
+
+.grid__hijo--6 {
+    grid-area: img6;
+    background-color: rgb(255, 102, 0);
+}
+
+.grid__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid__texto {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 5px 10px;
+}
