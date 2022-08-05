@@ -4,24 +4,25 @@
     object-fit: cover;
 }
 
-.contacto__formulario {
-    width: 100%;
-    margin: 1rem auto;
-    max-width: 500px;
-    text-align: left;
-    font-size: 18px;
-}
-
-.contacto__subtitulo {
-    padding-bottom: 20px;
-    color: black;
-    text-align: center;
-}
-
-.contacto__mapa {
-    width: 100%;
-    margin: 1rem auto;
-    max-width: 500px;
-    text-align: center;
-
+.contacto {
+    &__formulario {
+        width: 100%;
+        margin: 1rem auto;
+        max-width: 500px;
+        text-align: left;
+        font-size: 18px;
+    }
+    
+    &__subtitulo {
+        padding-bottom: 20px;
+        color: black;
+        text-align: center;
+    }
+    
+    &__mapa {
+        width: 100%;
+        margin: 1rem auto;
+        max-width: 500px;
+        text-align: center;
+    }
 }

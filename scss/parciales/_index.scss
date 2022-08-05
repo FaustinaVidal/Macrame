@@ -3,29 +3,29 @@
     margin: 2rem auto;
     max-width: 1000px;
     text-align: center;
+
+    &__titulo {
+        color: $negro;
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    &__parrafo {
+        color: $negro;
+        font-size: 20px;
+        text-align: justify;
+    }
+    &__imagen {
+        width: 100%;
+    }
 }
 
-.primeraSeccionIndex__titulo {
-    color: black;
-    font-size: 3rem;
-    font-weight: bold;
-    text-align: center;
-    padding: 1rem 0;
-}
 
-.primeraSeccionIndex__parrafo {
-    color: black;
-    font-size: 20px;
-    text-align: justify;
-}
-
-.primeraSeccionIndex__imagen {
-    width: 100%;
-}
 
 .sugerencias {
-    background-color: violet;
-    color: black;
+    background-color: $violeta;
+    color: $negro;
     padding: 1rem;
     border-radius: 10px;
     margin: 10px;
@@ -34,8 +34,9 @@
     right: 1rem;
     bottom: 14rem;
     display: flex;
+
+    &__boton {
+        margin-top: 1rem;
+    }
 }
 
-.sugerencias__boton {
-    margin-top: 1rem;
-}

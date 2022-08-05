@@ -36,7 +36,7 @@
 /* --------------header--------------*/
 /*Movil*/
 @media screen and (max-width:599px) {
-    .nav__menu {
+    .navmenu {
         display: none;
         background-color: rgb(255, 255, 255);
         position: fixed;
@@ -47,7 +47,7 @@
         height: 100vh;
     }
 
-    .nav__lista {
+    .navmenu__lista {
         flex-direction: column;
         align-items: flex-start;
         padding-left: 0;
@@ -60,11 +60,11 @@
         display: block;
     }
 
-    .nav__item--oculto {
+    .navmenu__item--oculto {
         display: block;
     }
 
-    .nav__menu:target {
+    .navmenu:target {
         display: block;
     }
 }

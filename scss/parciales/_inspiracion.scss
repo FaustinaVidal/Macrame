@@ -10,12 +10,12 @@
 
 .tarjeta {
     background-color: rgba(255, 255, 255, 0.712);
-    color: black;
+    color: $negro;
     width: 25%;
     height: 400px;
     padding: 25px 20px;
     margin: 10px 35px;
-    border: 5px solid rgb(82, 0, 82);
+    border: 5px solid $colorPrincipal;
     border-radius: 10px;
     display: inline-block;
     box-shadow: 3px 3px 5px gray;
@@ -26,7 +26,7 @@
 }
 
 .tarjeta__titulo {
-    color: black;
+    color: $negro;
     font-size: 23px;
     font-weight: lighter;
     text-align: center;
@@ -45,14 +45,14 @@
 }
 
 .tarjeta__parrafo {
-    color: black;
+    color: $negro;
     font-size: 1rem;
     font-weight: lighter;
     text-align: justify;
 }
 
 .card--oscuro {
-    background-color: black;
+    background-color: $negro;
     color: white;
 }
 

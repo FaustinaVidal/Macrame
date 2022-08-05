@@ -4,19 +4,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 body {
   font-family: 'Caveat', cursive;
   background-image: url(../assets/img/fondo2.jpg);
   color: black;
   background-repeat: repeat;
-  background-position: center; }
+  background-position: center;
+}
 
 /*Main*/
 main {
   margin-top: 100px;
-  min-height: 100vh; }
+  min-height: 100vh;
+}
 
 /*Header*/
 header {
@@ -31,69 +34,84 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+}
 
-.logo {
-  width: 50px;
-  height: 50px;
-  animation-name: girasol;
-  animation-duration: 3s; }
-
-@keyframes girasol {
-  0% {
-    transform: rotate(0deg); }
-  50% {
-    transform: rotate(180deg); }
-  100% {
-    transform: rotate(360deg); } }
-
-a {
-  color: black !important; }
-
-.nav__lista {
-  color: black;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  padding-right: 1rem; }
-
-.nav__item {
-  color: black;
-  transition: font-size 1s;
-  margin-left: 16px; }
-
-.nav__item:hover {
-  box-shadow: 3px 3px 5px gray;
-  border-radius: 15px;
-  background-color: violet; }
-
-.header__menu {
+header__menu {
   color: black;
   font-size: 60px;
-  display: none; }
+  display: none;
+}
 
 .header__icono {
   color: black;
   font-size: 30px;
   display: none;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
-.nav__item--oculto {
-  display: none; }
+.logo {
+  width: 50px;
+  height: 50px;
+  animation-name: girasol;
+  animation-duration: 3s;
+}
+
+@keyframes girasol {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+a {
+  color: black !important;
+}
+
+.navmenu__lista {
+  color: black;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding-right: 1rem;
+}
+
+.navmenu__item {
+  color: black;
+  transition: font-size 1s;
+  margin-left: 16px;
+}
+
+.navmenu__item--oculto {
+  display: none;
+}
+
+.navmenu__item:hover {
+  box-shadow: 3px 3px 5px gray;
+  border-radius: 15px;
+  background-color: violet;
+}
 
 /*Footer*/
 .footer {
-  background-image: linear-gradient(to right, #32074f, #623b77, #936ea1, #c5a6cd, #f7e0fb);
+  background-image: linear-gradient(to right, #520052, #623b77, #936ea1, #c5a6cd, #f7e0fb);
   color: black;
   padding: 2rem 1rem;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+}
 
 .footer__texto {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-size: 20px; }
+  font-size: 20px;
+}
 
 .footer__lista {
   display: flex;
@@ -104,42 +122,50 @@ a {
   margin-top: 1rem;
   padding: 1rem 0;
   gap: 2rem;
-  font-size: 20px; }
+  font-size: 20px;
+}
 
 .footer__icono {
   transition: font-size 1s;
   text-decoration: none;
-  transition: all 1s; }
+  transition: all 1s;
+}
 
 .footer__icono:hover {
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
 .fondo {
   background-color: rgba(255, 255, 255, 0.712);
   padding: 2rem;
   border-radius: 10px;
-  border: 4px solid #520052; }
+  border: 4px solid #520052;
+}
 
 .primeraSeccionIndex {
   width: 100%;
   margin: 2rem auto;
   max-width: 1000px;
-  text-align: center; }
+  text-align: center;
+}
 
 .primeraSeccionIndex__titulo {
   color: black;
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
-  padding: 1rem 0; }
+  padding: 1rem 0;
+}
 
 .primeraSeccionIndex__parrafo {
   color: black;
   font-size: 20px;
-  text-align: justify; }
+  text-align: justify;
+}
 
 .primeraSeccionIndex__imagen {
-  width: 100%; }
+  width: 100%;
+}
 
 .sugerencias {
   background-color: violet;
@@ -151,20 +177,24 @@ a {
   position: fixed;
   right: 1rem;
   bottom: 14rem;
-  display: flex; }
+  display: flex;
+}
 
 .sugerencias__boton {
-  margin-top: 1rem; }
+  margin-top: 1rem;
+}
 
 .card-body {
   text-align: justify;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+}
 
 .card__espacio {
-  padding: 1rem; }
+  padding: 1rem;
+}
 
 /*--------------Inspiracion----------------*/
 /*
@@ -178,12 +208,12 @@ a {
 
 .tarjeta {
     background-color: rgba(255, 255, 255, 0.712);
-    color: black;
+    color: $negro;
     width: 25%;
     height: 400px;
     padding: 25px 20px;
     margin: 10px 35px;
-    border: 5px solid rgb(82, 0, 82);
+    border: 5px solid $colorPrincipal;
     border-radius: 10px;
     display: inline-block;
     box-shadow: 3px 3px 5px gray;
@@ -194,7 +224,7 @@ a {
 }
 
 .tarjeta__titulo {
-    color: black;
+    color: $negro;
     font-size: 23px;
     font-weight: lighter;
     text-align: center;
@@ -213,14 +243,14 @@ a {
 }
 
 .tarjeta__parrafo {
-    color: black;
+    color: $negro;
     font-size: 1rem;
     font-weight: lighter;
     text-align: justify;
 }
 
 .card--oscuro {
-    background-color: black;
+    background-color: $negro;
     color: white;
 }
 
@@ -245,7 +275,8 @@ a {
 .seccion__patrones {
   width: 100%;
   margin: 0 auto;
-  max-width: 1000px; }
+  max-width: 1000px;
+}
 
 .grid {
   border: 3px solid #520052;
@@ -260,41 +291,51 @@ a {
   justify-items: stretch;
   align-items: stretch;
   justify-content: center;
-  align-content: stretch; }
+  align-content: stretch;
+}
 
+/*
 .grid__hijo {
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative; }
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
 
 .grid__hijo--1 {
-  grid-area: img1;
-  background-color: salmon; }
+    grid-area: img1;
+    background-color: salmon;
+}
 
 .grid__hijo--2 {
-  grid-area: img2;
-  background-color: green; }
+    grid-area: img2;
+    background-color: green;
+}
 
 .grid__hijo--3 {
-  grid-area: img3;
-  background-color: blue; }
+    grid-area: img3;
+    background-color: blue;
+}
 
 .grid__hijo--4 {
-  grid-area: img4;
-  background-color: #ff6600; }
+    grid-area: img4;
+    background-color: rgb(255, 102, 0);
+}
 
 .grid__hijo--5 {
-  grid-area: img5;
-  background-color: #ff6600; }
+    grid-area: img5;
+    background-color: rgb(255, 102, 0);
+}
 
 .grid__hijo--6 {
-  grid-area: img6;
-  background-color: #ff6600; }
-
+    grid-area: img6;
+    background-color: rgb(255, 102, 0);
+}
+*/
 .grid__img {
   width: 100%;
   height: 100%;
-  object-fit: cover; }
+  object-fit: cover;
+}
 
 .grid__texto {
   position: absolute;
@@ -304,58 +345,71 @@ a {
   color: white;
   border-radius: 10px;
   overflow: hidden;
-  padding: 5px 10px; }
+  padding: 5px 10px;
+}
 
 .mapa {
   width: 100%;
   height: 450px;
-  object-fit: cover; }
+  object-fit: cover;
+}
 
 .contacto__formulario {
   width: 100%;
   margin: 1rem auto;
   max-width: 500px;
   text-align: left;
-  font-size: 18px; }
+  font-size: 18px;
+}
 
 .contacto__subtitulo {
   padding-bottom: 20px;
   color: black;
-  text-align: center; }
+  text-align: center;
+}
 
 .contacto__mapa {
   width: 100%;
   margin: 1rem auto;
   max-width: 500px;
-  text-align: center; }
+  text-align: center;
+}
 
 /*Medida Tablet < 1023px*/
 @media screen and (max-width: 1023px) {
   .sugerencias {
-    display: none; }
+    display: none;
+  }
   .primeraSeccionIndex__imagen {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+  }
   .tarjetas {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+  }
   .tarjeta {
     width: 60%;
-    height: 60%; }
+    height: 60%;
+  }
   .contacto {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column;
+  }
+}
 
 /*Movil*/
 @media screen and (max-width: 599px) {
   .tarjeta {
     width: 80%;
-    height: 80%; } }
+    height: 80%;
+  }
+}
 
 /* --------------header--------------*/
 /*Movil*/
 @media screen and (max-width: 599px) {
-  .nav__menu {
+  .navmenu {
     display: none;
     background-color: white;
     position: fixed;
@@ -363,19 +417,25 @@ a {
     right: 0;
     z-index: 10000;
     width: 30%;
-    height: 100vh; }
-  .nav__lista {
+    height: 100vh;
+  }
+  .navmenu__lista {
     flex-direction: column;
     align-items: flex-start;
     padding-left: 0;
     padding-top: 1rem;
     height: 100%;
-    gap: 1rem; }
+    gap: 1rem;
+  }
   .header__icono {
-    display: block; }
-  .nav__item--oculto {
-    display: block; }
-  .nav__menu:target {
-    display: block; } }
+    display: block;
+  }
+  .navmenu__item--oculto {
+    display: block;
+  }
+  .navmenu:target {
+    display: block;
+  }
+}
 
 /*Siempre al final*/

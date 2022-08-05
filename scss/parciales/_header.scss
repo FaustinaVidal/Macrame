@@ -1,7 +1,7 @@
 /*Header*/
 header {
     background-image: linear-gradient(to right, #32074f, #623b77, #936ea1, #c5a6cd, #f7e0fb);
-    color: black;
+    color: $negro;
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -13,6 +13,19 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    &__menu {
+        color: $negro;
+        font-size: 60px;
+        display: none;
+    }
+
+}
+.header__icono {
+    color: $negro;
+    font-size: 30px;
+    display: none;
+    text-decoration: none;
 }
 
 .logo {
@@ -38,46 +51,35 @@ header {
 }
 
 a {
-    color: black !important;
+    color: $negro !important;
 }
 
-.nav__lista {
-    color: black;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    padding-right: 1rem;
+.navmenu {
+    &__lista {
+        color: $negro;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        padding-right: 1rem;
+    }
+    &__item {
+        color: $negro;
+        transition: font-size 1s;
+        margin-left: 16px;
+
+        &--oculto {
+            display: none;
+        }
+        &:hover {
+            box-shadow: 3px 3px 5px gray;
+            border-radius: 15px;
+            background-color: $violeta;
+        }
+    }
+
+
 }
 
-.nav__item {
-    color: black;
-    transition: font-size 1s;
-    margin-left: 16px;
-}
 
 
 
-.nav__item:hover {
-    box-shadow: 3px 3px 5px gray;
-    border-radius: 15px;
-    background-color: violet;
-}
-
-
-
-.header__menu {
-    color: black;
-    font-size: 60px;
-    display: none;
-}
-
-.header__icono {
-    color: black;
-    font-size: 30px;
-    display: none;
-    text-decoration: none;
-}
-
-.nav__item--oculto {
-    display: none;
-}
