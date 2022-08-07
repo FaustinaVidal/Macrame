@@ -94,7 +94,7 @@ a {
 .navmenu__item:hover {
   box-shadow: 3px 3px 5px gray;
   border-radius: 15px;
-  background-color: violet;
+  /*            background-color: $violeta;*/
 }
 
 /*Footer*/
@@ -193,7 +193,14 @@ a {
 }
 
 .card__espacio {
-  padding: 1rem;
+  padding: 2rem;
+}
+
+.mobile--centrar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 /*--------------Inspiracion----------------*/

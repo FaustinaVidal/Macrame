@@ -66,20 +66,16 @@ a {
         color: $negro;
         transition: font-size 1s;
         margin-left: 16px;
-
+        
         &--oculto {
             display: none;
         }
         &:hover {
             box-shadow: 3px 3px 5px gray;
             border-radius: 15px;
-            background-color: $violeta;
+/*            background-color: $violeta;*/
         }
     }
-
-
 }
-
-
 
 

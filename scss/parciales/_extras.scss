@@ -7,5 +7,12 @@
 }
 
 .card__espacio {
-    padding: 1rem;
+    padding: 2rem;
+}
+
+.mobile--centrar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
