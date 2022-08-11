@@ -34,9 +34,15 @@
     right: 1rem;
     bottom: 14rem;
     display: flex;
+    transition: all 1s;
+
+    &:hover {
+        padding: 1.5rem;
+    }
 
     &__boton {
         margin-top: 1rem;
     }
 }
+
 

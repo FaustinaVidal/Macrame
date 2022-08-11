@@ -37,14 +37,20 @@
 /*Movil*/
 @media screen and (max-width:599px) {
     .navmenu {
-        display: none;
+        /*display: none;*/
         background-color: rgb(255, 255, 255);
         position: fixed;
         top: 0;
-        right: 0;
+        right: -100%;
         z-index: 10000;
         width: 30%;
         height: 100vh;
+        transition: all 1s;
+    }
+
+    .navmenu:target {
+        /*display: block;*/
+        right: 0;
     }
 
     .navmenu__lista {
@@ -64,7 +70,4 @@
         display: block;
     }
 
-    .navmenu:target {
-        display: block;
-    }
 }

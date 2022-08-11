@@ -1,3 +1,15 @@
+.red-social-instagram {
+  color: white;
+}
+
+.red-social-whatsapp {
+  color: green;
+}
+
+.red-social-youtube {
+  color: red;
+}
+
 /*Siempre al principio*/
 /* Quito los estilos por defecto */
 * {
@@ -9,10 +21,11 @@
 
 body {
   font-family: 'Caveat', cursive;
+  /*        background-image: url(../../assets/img/curve-line.svg);
+        background-repeat: no-repeat;
+    background-position: center;*/
   background-image: url(../assets/img/fondo2.jpg);
   color: black;
-  background-repeat: repeat;
-  background-position: center;
 }
 
 /*Main*/
@@ -135,13 +148,6 @@ a {
   font-size: 2rem;
 }
 
-.fondo {
-  background-color: rgba(255, 255, 255, 0.712);
-  padding: 2rem;
-  border-radius: 10px;
-  border: 4px solid #520052;
-}
-
 .primeraSeccionIndex {
   width: 100%;
   margin: 2rem auto;
@@ -178,6 +184,11 @@ a {
   right: 1rem;
   bottom: 14rem;
   display: flex;
+  transition: all 1s;
+}
+
+.sugerencias:hover {
+  padding: 1.5rem;
 }
 
 .sugerencias__boton {
@@ -201,6 +212,13 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.fondo {
+  background-color: rgba(255, 255, 255, 0.712);
+  padding: 2rem;
+  border-radius: 10px;
+  border: 4px solid #520052;
 }
 
 /*--------------Inspiracion----------------*/
@@ -417,14 +435,19 @@ a {
 /*Movil*/
 @media screen and (max-width: 599px) {
   .navmenu {
-    display: none;
+    /*display: none;*/
     background-color: white;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -100%;
     z-index: 10000;
     width: 30%;
     height: 100vh;
+    transition: all 1s;
+  }
+  .navmenu:target {
+    /*display: block;*/
+    right: 0;
   }
   .navmenu__lista {
     flex-direction: column;
@@ -438,9 +461,6 @@ a {
     display: block;
   }
   .navmenu__item--oculto {
-    display: block;
-  }
-  .navmenu:target {
     display: block;
   }
 }
