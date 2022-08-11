@@ -1,0 +1,5 @@
+Cambie todos los lorem
+Comprimi todas mis imagenes
+Agregue meta:keywords
+	  meta:description
+	  link:shortcut
