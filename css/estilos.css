@@ -174,8 +174,9 @@ a {
 }
 
 .sugerencias {
-  background-color: violet;
+  background-color: #c5a6cd;
   color: black;
+  font-size: 18px;
   padding: 1rem;
   border-radius: 10px;
   margin: 10px;
@@ -188,7 +189,9 @@ a {
 }
 
 .sugerencias:hover {
-  padding: 1.5rem;
+  box-shadow: 3px 3px 5px gray;
+  background-color: #520052;
+  color: white;
 }
 
 .sugerencias__boton {

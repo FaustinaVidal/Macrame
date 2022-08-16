@@ -21,11 +21,10 @@
     }
 }
 
-
-
 .sugerencias {
-    background-color: $violeta;
+    background-color: $colorPrincipalClarito;
     color: $negro;
+    font-size: 18px;
     padding: 1rem;
     border-radius: 10px;
     margin: 10px;
@@ -37,7 +36,9 @@
     transition: all 1s;
 
     &:hover {
-        padding: 1.5rem;
+        box-shadow: 3px 3px 5px gray;
+        background-color: $colorPrincipal;
+        color: white;
     }
 
     &__boton {
