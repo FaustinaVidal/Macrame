@@ -21,11 +21,10 @@
     }
 }
 
-
-
 .sugerencias {
-    background-color: $violeta;
+    background-color: $colorPrincipalClarito;
     color: $negro;
+    font-size: 18px;
     padding: 1rem;
     border-radius: 10px;
     margin: 10px;
@@ -37,7 +36,13 @@
     transition: all 1s;
 
     &:hover {
+<<<<<<< HEAD
     box-shadow: 3px 3px 5px gray;
+=======
+        box-shadow: 3px 3px 5px gray;
+        background-color: $colorPrincipal;
+        color: white;
+>>>>>>> d28bc0a119a076f1897b0b83b1b605e5c3e42d00
     }
 
     &__boton {
