@@ -49,16 +49,26 @@ header {
     }
 }
 
-a {
-    color: $negro !important;
-}
-
 .colorsito{
     background-color: aqua;
     z-index: 999999999999999;
 }
 
+.link__color {
+    color: black;
+}
+.nav-link {
+    color: black;
+}
+
+/*
+a {
+    color: black !important;
+}
+*/
+
 .navmenu {
+    color: black;
     &__lista {
         color: $negro;
         list-style: none;
