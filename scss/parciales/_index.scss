@@ -11,11 +11,13 @@
         text-align: center;
         padding: 1rem 0;
     }
+
     &__parrafo {
         color: $negro;
         font-size: 20px;
         text-align: justify;
     }
+
     &__imagen {
         width: 100%;
     }
@@ -36,18 +38,13 @@
     transition: all 1s;
 
     &:hover {
-<<<<<<< HEAD
-    box-shadow: 3px 3px 5px gray;
-=======
+        box-shadow: 3px 3px 5px gray;
         box-shadow: 3px 3px 5px gray;
         background-color: $colorPrincipal;
         color: white;
->>>>>>> d28bc0a119a076f1897b0b83b1b605e5c3e42d00
     }
 
     &__boton {
         margin-top: 1rem;
     }
 }
-
-

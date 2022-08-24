@@ -86,6 +86,11 @@ a {
   color: black !important;
 }
 
+.colorsito {
+  background-color: aqua;
+  z-index: 999999999999999;
+}
+
 .navmenu__lista {
   color: black;
   list-style: none;
@@ -190,11 +195,9 @@ a {
 
 .sugerencias:hover {
   box-shadow: 3px 3px 5px gray;
-<<<<<<< HEAD
-=======
+  box-shadow: 3px 3px 5px gray;
   background-color: #520052;
   color: white;
->>>>>>> d28bc0a119a076f1897b0b83b1b605e5c3e42d00
 }
 
 .sugerencias__boton {
