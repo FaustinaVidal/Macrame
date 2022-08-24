@@ -204,6 +204,11 @@ a {
   margin-top: 1rem;
 }
 
+.active {
+  background-color: red;
+  z-index: 99999999999999999999999999999999;
+}
+
 .card-body {
   text-align: justify;
   display: flex;
