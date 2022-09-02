@@ -1,13 +1,13 @@
 .red-social-instagram {
-  color: white;
+  color: #f7e0fb;
 }
 
 .red-social-whatsapp {
-  color: green;
+  color: #c5a6cd;
 }
 
 .red-social-youtube {
-  color: red;
+  color: #32074f;
 }
 
 /*Siempre al principio*/
@@ -29,6 +29,10 @@ body {
 main {
   margin-top: 100px;
   min-height: 100vh;
+}
+
+a {
+  color: black !important;
 }
 
 /*Header*/
@@ -79,24 +83,6 @@ header__menu {
   }
 }
 
-.colorsito {
-  background-color: aqua;
-  z-index: 999999999999999;
-}
-
-.link__color {
-  color: black;
-}
-
-.nav-link {
-  color: black;
-}
-
-/*
-a {
-    color: black !important;
-}
-*/
 .navmenu {
   color: black;
 }
@@ -122,7 +108,6 @@ a {
 .navmenu__item:hover {
   box-shadow: 3px 3px 5px gray;
   border-radius: 15px;
-  /*            background-color: $violeta;*/
 }
 
 /*Footer*/
@@ -214,12 +199,6 @@ a {
   margin-top: 1rem;
 }
 
-/* Esta es otra de las pruebas para cambiar el color del boton en header*/
-.active {
-  background-color: red;
-  z-index: 99999999999999999999999999999999;
-}
-
 .card-body {
   text-align: justify;
   display: flex;
@@ -244,6 +223,10 @@ a {
   padding: 2rem;
   border-radius: 10px;
   border: 4px solid #520052;
+}
+
+.boton-comprar {
+  margin-top: 15px;
 }
 
 /*-------------Patrones--------------------*/

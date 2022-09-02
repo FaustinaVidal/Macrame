@@ -4,9 +4,9 @@ $negro: black;
 $violeta: violet;
 
 $redes: (
-    instagram: white,
-    whatsapp: green,
-    youtube: red
+    instagram: #f7e0fb,
+    whatsapp: #c5a6cd,
+    youtube: #32074f
 );
 
 @each $red, $color in $redes {

@@ -49,24 +49,6 @@ header {
     }
 }
 
-.colorsito{
-    background-color: aqua;
-    z-index: 999999999999999;
-}
-
-.link__color {
-    color: black;
-}
-.nav-link {
-    color: black;
-}
-
-/*
-a {
-    color: black !important;
-}
-*/
-
 .navmenu {
     color: black;
     &__lista {
@@ -87,7 +69,6 @@ a {
         &:hover {
             box-shadow: 3px 3px 5px gray;
             border-radius: 15px;
-/*            background-color: $violeta;*/
         }
     }
 }
